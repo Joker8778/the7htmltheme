@@ -1,1 +1,91 @@
+@font-face{
+    font-family: 'yekan';
+    src:url('fonts/yekan.eot?#') format('eot'),
+        url('fonts/yekan.woff') format('woff'),
+        url('fonts/yekan.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Black.eot');
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+html,body{
+    direction: rtl;
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+.container{
+    background-color: rgb(224, 223, 223);
+    display: grid;
+    grid-template-columns: repeat(2,20px);
+    padding-top: 20px;
+}
+.about{
+    padding-right: 50px;
+    margin-right: -102px;
+    display: inline-block;
+    width: 99px;
+    margin-left: 248px;
+    padding-bottom: 13px;
+}
+.head2 span{
+    display: inline;
+    border-image-slice: 1;
+    border-image-source: -webkit-linear-gradient(left,#6b61f4 0%,#54a0fe 50%,#3dddfb 100%);
+    background: transparent;
+    border-bottom: 5px solid;
+    width: 4%;
+    position: absolute;
+    right: 243px;
+}
+.head2{
+    padding-top: 20px;
+    margin-right: 300px;
+    padding-bottom: 10px;
+}
+.pargraf{
+    font-family: 'yekan';
+    display: inline-block;
+    width: 977px;
+    margin-top: -38px;
+    margin-right: 423px;
+}
+.pargrafbox{
+    padding-top: 50px;
+    display: inline-block;
+    margin-right: 300px;
+
+}
+.clearfix{
+    clear: both;
+}
+.faqbox i{
+    background: -webkit-linear-gradient(left,#6b61f4 0%,#54a0fe 50%,#3dddfb 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.container2{
+    display: inline;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 20px;
+}
+#logo{
+    font-size: 50px;
+}
+.faqbox{
+    width: 370px;
+    margin-right: 206px;
+    font-family: 'yekan';
+    font-size: 15px;
+}
+
+
 
