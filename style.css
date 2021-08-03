@@ -1,49 +1,110 @@
 html,body{
-    direction: ltr;
+    direction: rtl;
     background-color: aliceblue;
     padding: 0px;
     margin: 0px;
 }
-.flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: linear-gradient(
-        30deg, 
-        rgb(106, 97, 244) 5%, 
-        rgb(84, 160, 254) 50%, 
-        rgb(3, 219, 223) 95%);
-        padding-top: 2%;
+.container{
+    background-color: rgb(184, 184, 184);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    text-align: right;
 }
-.flex-child{
+.contant{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 10px;
-    margin-right: 7%;
 }
-#icon{
-    font-size: 2rem;
+.contant-tell,.contant-email,.contant-lok,.work-time,.socila-networks{
+    color: rgba(235, 235, 235, 0.685);
+}
+.contant-tell-number,.contant-email-addres,.lokation,.work-time-at-web{
+    margin-top: 0px;
+    font-size: 1.5rem;
+}
+.social-icon{
+    justify-content: center;
+    text-align: center;
+}
+.social-icon > i{
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(194, 194, 194);
+    color: rgb(151, 151, 151);
+    border-radius: 50%;
+    line-height: 58px;
+    margin-bottom: 2%;
+    margin-left: 1%;
+}
+.social-icon i:hover{
+    background: linear-gradient(
+        90deg, 
+        #6b61f4 0%, 
+        #54a0fe 50%, 
+        #3dddfb 100%
+    );
     color: white;
-    width: 66px;
-    height: 66px;
-    line-height: 66px;
-    border-radius: 97%;
-    border: 2px solid white;
-    cursor: pointer
-}
-#icon:hover{
-    background-color: white;
-    color: rgb(23, 81, 240);
     transition: all linear 0.2s;
+    cursor: pointer;
 }
-.flex-child-text{
-    font-family: IRANSans;
-    color: rgba(255,255,255,0.5);
+.forms{
+    padding-top: 2%;
 }
-.flex-child-text-link{
+.text input[type=text]{
+    width: 56%;
+    height: 45px;
+    margin-bottom: 3%;
+    outline: none;
+}
+.tel input[type=tel]{
+    width: 56%;
+    height: 45px;
+    margin-bottom: 3%;
+    outline: none;
+}
+#textera2{
+    width: 56%;
+    height: 250px;
+    margin-bottom: 1%;
+    outline: none;
+}
+::placeholder{
+    padding-right: 8px;
+    font-size: 1rem;
+}
+:focus::placeholder{
+    opacity: 0.5;
+}
+.submit{
+    margin-top: 2%;
+    width: 12%;
+    height: 38px;
+    border: none;
+    background: -webkit-linear-gradient(
+        90deg, 
+        #6b61f4 0%, 
+        #54a0fe 50%, 
+        #3dddfb 100%
+    );
     color: white;
-    font-family: 'yekan';
+    font-size: 1.2rem;
+    cursor: pointer;
 }
+.submit:focus{
+    opacity: 0.8;
+}
+.error{
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(221, 31, 31);
+    font-size: 1.2rem;
+    display: none;
+}
+
+
 
 
 
